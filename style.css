@@ -103,6 +103,7 @@ button {
     background-color: #C4C4C4;
     color: #FCFCFC;
     border: none;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -145,4 +146,11 @@ span {
 footer img {
     width: 180px;
     height: 180px;
+}
+.selecionado{
+    border-color: #404EED;
+}
+
+.modelo{
+    margin-top: 40px;
 }

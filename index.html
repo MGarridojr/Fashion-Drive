@@ -31,19 +31,19 @@
                     <p>Escolha o Modelo</p>
                     <div class="estilos">
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'modelo', 't-shirt')" class="imageBackground">
                                 <img src="imagens/tshirt.png">
                             </div>
                             <p>T-shirt</p>
                         </div>
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'modelo', 'top-tank')" class="imageBackground">
                                 <img src="imagens/Camiseta.png">
                             </div>
                             <p>Camiseta</p>
                         </div>
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'modelo', 'long')" class="imageBackground">
                                 <img src="imagens/Mangalonga.png">
                             </div>
                             <p>Manga longa</p>
@@ -56,19 +56,19 @@
                     <p>Escolha a Gola</p>
                     <div class="estilos">
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'gola', 'v-neck')" class="imageBackground">
                                 <img src="imagens/GolaV.png">
                             </div>
                             <p>Gola V</p>
                         </div>
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'gola', 'round')" class="imageBackground">
                                 <img src="imagens/GolaRedonda.png">
                             </div>
                             <p>Gola Redonda</p>
                         </div>
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'gola', 'polo')" class="imageBackground">
                                 <img src="imagens/GolaPolo.png">
                             </div>
                             <p>Gola Polo</p>
@@ -80,19 +80,19 @@
                     <p>Escolha o Tecido</p>
                     <div class="estilos">
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'tecido', 'silk')" class="imageBackground">
                                 <img src="imagens/Seda.png">
                             </div>
                             <p>Seda</p>
                         </div>
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'tecido', 'cotton')" class="imageBackground">
                                 <img src="imagens/Algodão.png">
                             </div>
                             <p>Algodão</p>
                         </div>
                         <div class="card-de-escolha">
-                            <div class="imageBackground">
+                            <div onclick="select(this, 'tecido', 'polyester')" class="imageBackground">
                                 <img src=" imagens/Poliester.png">
                             </div>
                             <p>Poliester</p>
@@ -104,10 +104,10 @@
             <!-- Confirmação do Pedido -->
             <div class="imagem-url">
                 <p>Imagem de Referência</p>
-                <input type="url" placeholder="Insira o link" id="Url-reference">
+                <input type="url" required placeholder="Insira o link" id="Url-reference">
 
             </div>
-            <button>Confirmar Pedido</button>
+            <button disabled>Confirmar Pedido</button>
 
         </Div>
         <!-- ilustração -->
@@ -120,8 +120,8 @@
     <footer>
         <!-- ultimos pedidos -->
         <h2>Ultimos pedidos</h2>
-        <div class="ultimos-pedidos">
-            <div class="background-pedido">
+        <div class="ultimos-pedidos" id="last_requests">
+            <!-- <div class="background-pedido">
                 <img src="imagens/Blusa1.png">
                 <p>
                     <span>Criador:</span>teste
@@ -150,11 +150,12 @@
                 <p>
                     <span>Criador:</span>teste
                 </p>
-            </div>
+            </div> -->
         </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="Scripts/script.js"></script>
 </body>
 
 </html>
