@@ -36,7 +36,7 @@ function catchNeck(estilo, gola) {
 
 }
 function catchMaterial(estilo, tecido) {
-    if (estilo == "gola") {
+    if (estilo == "tecido") {
         material = tecido
     }
 
@@ -75,12 +75,12 @@ function LastRequest(response) {
 function sendRequest() {
     let imagem = document.getElementById("Url-reference").value
     let Pedido = {
-        "model": model,
-        "neck": neck,
-        "material": material,
-        "image": imagem,
-        "owner": nome,
-        "author": nome
+        model: model,
+        neck: neck,
+        material: material,
+        image: imagem,
+        owner: nome,
+        author: nome
     }
     promise = axios.post(API_fashionDrive, Pedido)
     promise.then(Confirmado)
